@@ -1,0 +1,5 @@
+To parse the CSV, the fields must be labeled:
+
+OfficialWorkshopTitle,Department,LeadPresenter,Date,StartTime,EndTime,WorkshopSeriesName,Description
+
+As of 9/12/2024, you also need to remove the AM / PM tails from the start/end times.

@@ -1,0 +1,81 @@
+:root {
+    --nluverylightblue: #003b66;
+    --nlulightblue: #263f6b;
+    --nlublue:#213559;
+    --textshadowcolor: #ffdb9f;
+    --textshadow1opacity: 0.501;
+    --textshadow2opacity: 0.302;
+}
+
+
+.zbg-event {
+    font-family: 'Gagalin', sans-serif;
+    color:var(--nlublue);
+    margin: 1em;       
+    text-anchor:start;                                         
+}
+
+.zbg-main-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bolder;
+  font-style:italic;
+  color:var(--nluverylightblue);
+  text-transform: uppercase;
+}
+
+.zbg-main-date-range {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style:italic;
+    color:white;
+    background-color: var(--nlulightblue);
+    text-transform: uppercase;
+}
+
+.with-text-shadow {
+    
+        text-shadow:
+          1px 1px 0px #ffdb9f80,
+          2px 2px 0px #ffdb9f4D;
+      
+      
+}
+
+.hexagon-outer{
+    fill:#ffffff;
+    stroke:var(--nlublue);
+}
+
+.hexagon-inner{
+    fill:none;
+    stroke:var(--nlublue);
+    stroke-width: 3px;
+}
+
+.hexagon-arrow {
+    fill:var(--nlublue);
+    stroke:var(--nlublue);
+}
+
+.hex-textbox-class{
+    fill:white;
+    stroke:var(--nlublue);
+    stroke-width: 1.5px;
+
+}
+
+
+.zbg-bg{
+    fill: var(--nlublue);
+    stroke:var(--nlublue);
+    stroke-width: 3px;
+}
+
+.zbg-bg-light{
+    fill: var(--nlulightblue);
+    stroke: var(--nlulightblue);
+    stroke-width: 3px;
+
+}
