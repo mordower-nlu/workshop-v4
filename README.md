@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Workshop Auto-Formatter for TerminalFour
+Learning Support hosts many workshops.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sometimes these workshops are part of a series and should be grouped together on our website. For example: our Game Development Workshop is a three-part series. Rather than listing each part individually, interspersed with our other CS workshops, it's better to chunk "like with like", so-to-speak.
 
-Currently, two official plugins are available:
+To facilitate this grouping, I made this React app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Functionality
+This app:
+<ol>
+  <li>Parses Learning Support Workshop/Event information from a local .CSV file into JavaScript objects.</li>
+  <li>Sorts the events by date, discipline, workshop series; omits events that have already occurred.</li>
+  <li>Formats date, time, etc. information into a nice, readable format for use on our website.</li>
+  <li>Renders our content to HTML, using the "Nested Accordion" functionality and formatting I came up with.</li>
+  
+</ol>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+From here, you can just copy and paste the page source into T4. I use Chrome's page inspector and just copy each element I want, one-by-one, but if requested by staff, I can have it just print the HTML for us directly. 
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+If your T4 page already contains the code and stylesheets required for the "Nested Accordion" stuff, it shouldn't be too bad.
